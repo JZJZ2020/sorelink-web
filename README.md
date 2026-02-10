@@ -29,7 +29,7 @@ https://www.htstack.com/login.shtml
 账号：friesen.cai@gmail.com
 密码：cplht2024!
 
-位置：/domains/sorlink.com/public_html
+位置：/domains/sorelink.com/public_html
 
 ## 访问地址
-http://www.sorlink.com/index_new.html
+http://www.sorelink.com/index_new.html
