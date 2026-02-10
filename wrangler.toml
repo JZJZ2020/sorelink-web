@@ -1,0 +1,6 @@
+name = "sorlink-web"
+compatibility_date = "2026-02-10"
+
+[assets]
+directory = "./"
+not_found_handling = "404"
