@@ -1,0 +1,210 @@
+
+/*--------------------- 通用  -----------------------*/
+.ty-transform-top-110{
+  transform: translateY(-100px);
+}
+/*--------------------- 导航栏-1  -----------------------*/
+.ty-navbar-1 {
+    background-color: #000; /* 背景色为黑色 */
+    color: white;
+    font-size: 14px;
+  }
+  .ty-navbar-1 a {
+    color: rgba(203, 203, 203, 1);
+    text-decoration: none;
+  }
+  .ty-navbar-1 a:hover {
+    color: white; /* 悬停效果 */
+  }
+  .ty-navbar-1-divider {
+    margin: 0 10px;
+    color: #999;
+  }
+
+
+
+
+
+/*--------------------- 导航栏-2  -----------------------*/
+.ty-navbar-2-brand .logo {
+    width: 120px;
+    height: 34px;
+    opacity: 1;
+    background: url(/img/logo.png);
+    background-size: contain; 
+}
+.ty-navbar-2-nav-link {
+  padding: 0 20px;
+}
+.ty-navbar-2-nav-link .nav-link{
+  color: #000;
+  opacity: 0.8;
+}
+.ty-navbar-2-nav-link .nav-link:hover {
+  color: #000; /* 悬停效果 */
+}
+
+/*--------------------- 广告栏  -----------------------*/
+.ty-advertisement-section {
+  background-color: #f8f9fa;
+  background: url(/img/ad_backgroud.png);
+  background-size: cover; /* 让背景图充满整个容器 */
+  background-repeat: no-repeat; /* 防止背景图片重复 */
+  background-position: center center; /* 将背景图居中 */
+
+}
+.ty-advertisement-section-mobile {
+  background-color: #f8f9fa;
+  background: url(/img/address_backgroud_mobile.png);
+  background-size: cover; /* 让背景图充满整个容器 */
+  background-repeat: no-repeat; /* 防止背景图片重复 */
+  background-position: center center; /* 将背景图居中 */
+
+}
+
+
+/*--------------------- 介绍-1  -----------------------*/
+.ty-introduce-1-section {
+  padding: 60px 0;
+}
+.ty-introduce-1-company-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.ty-introduce-1-company-description {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 20px;
+}
+.ty-introduce-1-rounded-image {
+  border-radius: 15px;
+  margin: 40px 0px;
+
+}
+
+/*--------------------- 产品-1  -----------------------*/
+.ty-product-1-section {
+  padding: 50px 0;
+  background: url(/img/product_backgroud.png);
+  background-size: cover; /* 让背景图充满整个容器 */
+  background-repeat: no-repeat; /* 防止背景图片重复 */
+  background-position: center center; /* 将背景图居中 */
+}
+.ty-product-1-img {
+  padding: 20px 20px;
+}
+.ty-product-1-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.ty-product-1-content {
+  padding-bottom: 20px;
+}
+.ty-product-1-btn {
+  border-radius: 30px;
+  border: 2px solid #007bff;
+  color: #007bff;
+  padding: 8px 20px;
+  margin-bottom: 20px;
+}
+.ty-product-1-btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/*--------------------- 介绍-2  -----------------------*/
+
+.ty-introduce-2-line {
+  width: 156px;
+  height: 3px;
+  background: #4A62F8FF;
+  margin-top: -3rem;
+}
+
+.ty-introduce-2-icon-circle {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 15px;
+}
+.ty-introduce-2-icon-circle span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.ty-introduce-2-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 80px;
+}
+.ty-introduce-2-content {
+  padding-bottom: 20px;
+  opacity: 0.6;
+}
+
+/*--------------------- 地图  -----------------------*/
+.ty-map-img {
+  height: 501px;
+  background-size: contain; 
+}
+
+/*--------------------- 地址  -----------------------*/
+.ty-address-div {
+  width: 100%;
+  background: url('/img/address_backgroud.png') no-repeat center center;
+  background-size: cover;
+}
+.ty-address-contact {
+  padding: 30px;
+}
+.ty-address-contact-container {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 30px;
+  border-radius: 15px;
+  color: #fff;
+}
+.ty-address-line {
+  width: 156px;
+  height: 3px;
+  background: #4A62F8FF;
+  margin-bottom: 40px;
+}
+.ty-address-contact-info h2 {
+  color: #fff;
+}
+.ty-address-map {
+  padding: 60px;
+}
+.ty-address-map-container iframe {
+  border-radius: 10px;
+}
+
+/*--------------------- 尾部  -----------------------*/
+.footer {
+  background-color: #f8f9fa;
+  padding: 15px 0;
+  text-align: center;
+}
+.footer-links {
+  margin-bottom: 15px;
+}
+.footer-links-item {
+  padding: 12px 0;
+}
+.footer-links .footer-links-item  a {
+  margin: 0 15px;
+  color: rgba(105, 105, 105, 1);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #343a40;
+}
