@@ -1,0 +1,239 @@
+/* Product Detail Page Styles */
+
+:root {
+    --product-primary: #00D4FF;
+    --product-navy: #0B1F2D;
+    --product-gray-bg: #f8f9fa;
+    --product-text: #4a5568;
+}
+
+/* Breadcrumbs */
+.breadcrumb-container {
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.breadcrumb-item a {
+    color: var(--product-navy);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-item.active {
+    color: var(--product-primary);
+}
+
+/* Product Hero */
+.product-hero {
+    padding: 60px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.product-image-main {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.product-image-main:hover {
+    transform: scale(1.02);
+}
+
+.product-info-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: rgba(0, 212, 255, 0.1);
+    color: var(--product-primary);
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.product-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--product-navy);
+    margin-bottom: 10px;
+}
+
+.product-subtitle {
+    font-size: 1.25rem;
+    color: var(--product-text);
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.product-model {
+    font-size: 1.1rem;
+    color: #718096;
+    margin-bottom: 30px;
+}
+
+.product-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-datasheet {
+    background-color: #f6ad55;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-datasheet:hover {
+    background-color: #ed8936;
+    color: white;
+}
+
+.btn-inquiry {
+    background-color: var(--product-navy);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.btn-inquiry:hover {
+    opacity: 0.9;
+    color: white;
+}
+
+/* Sticky Navigation */
+.product-nav-sticky {
+    position: sticky;
+    top: 70px;
+    /* Offset for main navbar */
+    background-color: #fff;
+    z-index: 100;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.product-nav-tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-nav-tabs li a {
+    display: block;
+    padding: 20px 25px;
+    color: var(--product-navy);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+.product-nav-tabs li a:hover,
+.product-nav-tabs li a.active {
+    color: var(--product-primary);
+    border-bottom-color: var(--product-primary);
+}
+
+/* Section Styling */
+.product-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-weight: 700;
+    color: var(--product-navy);
+    padding-bottom: 15px;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--product-primary);
+}
+
+/* Features Grid */
+.feature-card {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--product-primary);
+    margin-bottom: 20px;
+}
+
+/* Technical Parameters Table */
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.spec-category {
+    background-color: var(--product-navy);
+    color: white;
+    padding: 12px 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.spec-row {
+    border-bottom: 1px solid #edf2f7;
+}
+
+.spec-row:nth-child(even) {
+    background-color: #f7fafc;
+}
+
+.spec-label {
+    width: 30%;
+    padding: 15px 20px;
+    color: #718096;
+    font-weight: 500;
+    background-color: #fcfdfe;
+}
+
+.spec-value {
+    padding: 15px 20px;
+    color: var(--product-navy);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-title {
+        font-size: 1.8rem;
+    }
+
+    .product-actions {
+        flex-direction: column;
+    }
+
+    .spec-label {
+        width: 40%;
+    }
+}

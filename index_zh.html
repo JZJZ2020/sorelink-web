@@ -1,335 +1,645 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SORELINK</title>
+    <title>SORELINK - 领先的全光网络智能核心研发</title>
     <link rel="icon" href="/favicon.png" type="image/png">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/bootstrap-icons.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/styles.css">
-    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=66dec3b55ed17f00198b327e&product=inline-share-buttons&source=platform" async="async"></script>
+    <link rel="stylesheet" href="/css/animations.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=66dec3b55ed17f00198b327e&product=inline-share-buttons&source=platform"
+        async="async"></script>
 </head>
-<body>
-    <nav class="fixed-top" style="background-color: #fff;">
-    <!-------------------------------------------------------- 导航栏-1 ----------------------------------------------------->
-        <nav class="navbar ty-navbar-1 border-top-custom" >
-            <div class="container-fluid d-flex justify-content-between">
-            <div>
-                <!-- <a href="#">[Login]</a>
-                <a href="#">[Register]</a> -->
-            </div>
-            <div>
-                <!-- <a href="#">Mobile</a>
-                <span class="ty-navbar-1-divider">|</span> -->
-                <a href="/index_zh.html">简体中文</a>
+
+<header class="fixed-top">
+    <nav class="ty-navbar-1">
+        <div class="container d-flex justify-content-between">
+            <div></div>
+            <div class="language-switcher">
+                <a href="/index_zh.html" class="active">简体中文</a>
                 <span class="ty-navbar-1-divider">|</span>
                 <a href="/index_en.html">English</a>
             </div>
-            </div>
-        </nav>
-        <!-------------------------------------------------------- 导航栏-2 ----------------------------------------------------->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="ty-navbar-2-brand" href="/index_en.html">
-                    <div class="logo"></div>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item ty-navbar-2-nav-link"><a class="nav-link" href="#home">网站首页</a></li>
-                        <li class="nav-item ty-navbar-2-nav-link"><a class="nav-link" href="#about">关于我们</a></li>
-                        <li class="nav-item ty-navbar-2-nav-link"><a class="nav-link" href="#product">产品中心</a></li>
-                        <li class="nav-item ty-navbar-2-nav-link"><a class="nav-link" href="#solution">解决方案</a></li>
-                        <li class="nav-item ty-navbar-2-nav-link"><a class="nav-link" href="#contact">联系我们</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </div>
     </nav>
-<!-------------------------------------------------------- 广告栏  ----------------------------------------------------->
-<div style="padding-top:100px;" id="home" ></div>
-<section class="d-block d-md-none ty-advertisement-section-mobile">
-    <div class="container">
-        <div id="carouselExampleIndicators-mobile" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators-mobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators-mobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/img/ad_1_new_mobile.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="/img/ad_2_new_mobile.png" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-mobile" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-mobile" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-</section>
-
-<section class="d-none d-md-block ty-advertisement-section" >
-    <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/img/ad_1_new.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="/img/ad_2_new.png" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-</section>
-        <!-------------------------------------------------------- 介绍-1 ----------------------------------------------------->
-        <!--锚点-->
-        <div class="ty-transform-top-110" id="about"></div>
-        <section class="ty-introduce-1-section">
-            <div class="container">
-            <div class="row align-items-center">
-                <!-- 图片部分 -->
-                <div class="col-md-4">
-                <img src="/img/aboutus.jpg" alt="Building Image" class="img-fluid ty-introduce-1-rounded-image">
-                </div>
-                <!-- 文字部分 -->
-                <div class="col-md-8">
-                <h2 class="ty-introduce-1-company-title">SORELINK——全光网络智能核心研发的先行者</h2>
-                <p class="ty-introduce-1-company-description">
-                    SORELINK 成立于 2015 年，位于中国上海。我们公司致力于GPON ONU、xDSL DSLAM、EOC、PLC、Switch的研发、生产、销售和服务。
-                </p>
-                <p class="ty-introduce-1-company-description">
-                    SORELINK Ltd 为通信行业的各种部署要求提供量身定制的有线线路网络产品。我们可以提供可定制的系统板和线卡。
-                </p>
-                <p class="ty-introduce-1-company-description">
-                    SORELINK 拥有专业的研发团队，我们的工程师在电信设备、技术和工具方面拥有至少 10 年的经验。 
-                    除了我们自己的能力外，我们还拥有由不同技术领域的研发专家组成的广泛联系网络。 
-                    我们还与研究界在支持我们和客户的领域密切合作。
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <!-------------------------------------------------------- 产品-1 ----------------------------------------------------->
-        <!--锚点-->
-        <div class="ty-transform-top-110" id="product"></div>
-        <section class="ty-product-1-section">
-            <div class="container text-center my-5">
-                <h2 class="mb-5">业界领先的全光网络产品</h2>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="/img/product/product_1.jpg" class="card-img-top ty-product-1-img" alt="Single Port Mini DSLAM Module">
-                            <div class="card-body">
-                                <h5 class="card-title ty-product-1-title">Single Port Mini DSLAM Module</h5>
-                                <p class="card-text ty-product-1-content"><!-- 待补充产品介绍--></p>
-                                <a href="/product/product_1_zh.html" class="btn btn-outline-primary ty-product-1-btn">产品详情</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="/img/product/product_2.jpg" class="card-img-top ty-product-1-img" alt="Outdoor mini Single Port DSLAM MDU">
-                            <div class="card-body">
-                                <h5 class="card-title ty-product-1-title">Outdoor mini Single Port DSLAM MDU</h5>
-                                <p class="card-text ty-product-1-content"><!-- 待补充产品介绍--></p>
-                                <a href="/product/product_2_zh.html" class="btn btn-outline-primary ty-product-1-btn">产品详情</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="/img/product/product_3.jpg" class="card-img-top ty-product-1-img" alt="Outdoor mini 8L DSLAM MDU">
-                            <div class="card-body">
-                                <h5 class="card-title ty-product-1-title">Outdoor mini 8L DSLAM MDU</h5>
-                                <p class="card-text ty-product-1-content"><!-- 待补充产品介绍--></p>
-                                <a href="/product/product_3_zh.html" class="btn btn-outline-primary ty-product-1-btn">产品详情</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="/img/product/product_4.jpg" class="card-img-top ty-product-1-img" alt="Single Port Mini DSLAM Module">
-                            <div class="card-body">
-                                <h5 class="card-title ty-product-1-title">GPON ONU</h5>
-                                <p class="card-text ty-product-1-content"><!-- 待补充产品介绍--></p>
-                                <a href="/product/product_4_zh.html" class="btn btn-outline-primary ty-product-1-btn">产品详情</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="/img/product/product_5.jpg" class="card-img-top ty-product-1-img" alt="Outdoor mini Single Port DSLAM MDU">
-                            <div class="card-body">
-                                <h5 class="card-title ty-product-1-title">EOC/PLC</h5>
-                                <p class="card-text ty-product-1-content"><!-- 待补充产品介绍--></p>
-                                <a href="/product/product_5_zh.html" class="btn btn-outline-primary ty-product-1-btn">产品详情</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="/img/product/product_6.jpg" class="card-img-top ty-product-1-img" alt="Outdoor mini 8L DSLAM MDU">
-                            <div class="card-body">
-                                <h5 class="card-title ty-product-1-title">Industry Data Switch</h5>
-                                <p class="card-text ty-product-1-content"><!-- 待补充产品介绍--></p>
-                                <a href="/product/product_6.html" class="btn btn-outline-primary ty-product-1-btn">产品详情</a>
-                            </div>
-                        </div>
-                    </div>            
-                </div>
-            </div>
-        </section>  
-
-        <!-------------------------------------------------------- 介绍-2 ----------------------------------------------------->
-        <!--锚点-->
-        <div class="ty-transform-top-110" id="solution"></div>
-        <div class="container text-center my-5" id="solution">
-            <h2 class="mb-5">技术与服务</h2>
-            <div class="d-flex justify-content-center align-items-center"><div class="ty-introduce-2-line"></div></div>
-            <div class="row row-cols-1 row-cols-md-4 g-4" style="margin-top: 40px;">
-                <div class="col text-center d-flex flex-column align-items-center">
-                    <div class="ty-introduce-2-icon-circle">
-                        <div>
-                            <i class="bi bi-shop"></i>
-                            <span>1700+</span>
-                        </div>
-                    </div>
-                    <h5 class="ty-introduce-2-title">技术服务机构</h5>
-                    <p class="ty-introduce-2-content">在不断创新和求精的核心理念的引领下，公司拥有1700多个服务中心。</p>
-                </div>
-                <div class="col  text-center d-flex flex-column align-items-center">
-                    <div class="ty-introduce-2-icon-circle">
-                        <div>
-                            <i class="bi bi-people"></i>
-                            <span>7000+</span>
-                        </div>
-                    </div>
-                    <h5 class="ty-introduce-2-title">技术服务人员</h5>
-                    <p class="ty-introduce-2-content">总部的 7,000 多名服务工程师、行业资深人士和研发精英通力合作，打造高效、集成的服务模式。</p>
-                </div>
-                <div class="col  text-center d-flex flex-column align-items-center">
-                    <div class="ty-introduce-2-icon-circle">
-                        <div>
-                            <i class="bi bi-hand-thumbs-up"></i>
-                            <span>5 年</span>
-                        </div>
-                    </div>
-                    <h5 class="ty-introduce-2-title">行业领先的服务质量</h5>
-                    <p class="ty-introduce-2-content" >将购买前、收购和运营后服务集成到客户驱动的价值链中，开创价值链服务的新时代并树立新的行业标杆。</p>
-                </div>
-                <div class="col  text-center d-flex flex-column align-items-center">
-                    <div class="ty-introduce-2-icon-circle">
-                        <div>
-                            <i class="bi bi-headset"></i>
-                            <span>0 距离</span>
-                        </div>
-                    </div>
-                    <h5 class="ty-introduce-2-title">客户参与和服务</h5>
-                    <p class="ty-introduce-2-content">全球客户门户 （GCP） 系统支持远程监控设备运行、油耗、位置和轨迹。</p>
-                </div>
-            </div>
-        </div>
-
-        <!-------------------------------------------------------- 地图-1 ----------------------------------------------------->
-        <!--锚点-->
-        <div class="ty-transform-top-110" id="map"></div>
-        <div class="container text-center my-5" id="map">
-            <h2 class="mb-5">业务地图</h2>
-            <div class="d-flex justify-content-center align-items-center"><div class="ty-introduce-2-line"></div></div>
-            <div class="map-img" ><img src="/img/map.png" class="img-fluid" alt="map">   </div>
-        </div>
-
-        <!-------------------------------------------------------- 地址-1 ----------------------------------------------------->
-        <!--锚点-->
-        <div class="ty-transform-top-110" id="contact"></div>
-        <div class="ty-address-div">
-            <div class="container mt-5 " id="contact">
-                <div class="row align-items-center">
-                    <!-- 联系信息部分 -->
-                    <div class="col-md-6 ty-address-contact">
-                        <div class="ty-address-contact-container">
-                            <div class="contact-info">
-                                <h2>联系我们</h2>
-                                <div class="d-flex"><div class="ty-address-line"></div></div>
-                                <div class="row">
-                                    <div class="col-12 col-md-3"><p><i class="bi bi-envelope-fill"></i> 邮箱: </p></div>
-                                    <div class="col-12 col-md-9"><p><a href="mailto:support@sorelink.com" style="color: #fff;">support@sorelink.com</a></p> </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 col-md-3"><p><i class="bi bi-geo-alt-fill"></i> 地址.:</p></div>
-                                    <div class="col-12 col-md-9"><p>
-                                        中国武汉<br/>
-                                        武昌区<br/>
-                                        松竹路中央文化区<br/>
-                                        K6-1 号楼 2 单元 21 层<br/>
-                                    </p> </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 地图部分 -->
-                    <div class="col-md-6 ty-address-map" >
-                        <div class="ty-address-map-container">
-                            <iframe 
-                                src="https://www.google.com/maps?q=Central+Cultural+District,+Songzhu+Road,+Wuchang+District,+Wuhan,+China&output=embed"
-                                width="100%" 
-                                height="340" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-------------------------------------------------------- 尾部 ----------------------------------------------------->
-    <footer class="footer">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <div class="row footer-links">
-                <div class="col-md-2 footer-links-item"><a href="#home">网站首页</a></div>
-                <div class="col-md-2 footer-links-item"><a href="#about">关于我们</a></div>
-                <div class="col-md-2 footer-links-item"><a href="#product">产品中心</a></div>
-                <div class="col-md-2 footer-links-item"><a href="#solution">技术与服务</a></div>
-                <div class="col-md-2 footer-links-item"><a href="#map">业务地图</a></div>
-                <div class="col-md-2 footer-links-item"><a href="#contact">联系我们</a></div>
+            <a class="navbar-brand" href="/index_zh.html">
+                <div class="logo"></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list text-white fs-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">网站首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">关于我们</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#product">产品中心</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#solution">解决方案</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
+                </ul>
             </div>
         </div>
-        <div style="margin: 16px 0;" >
-            <div class="sharethis-inline-share-buttons"></div>
-        </div>
-    </footer>
+    </nav>
+</header>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/scripts.js"></script>
+<div id="home"></div>
+<section class="hero-swiper-container">
+    <div class="swiper heroSwiper">
+        <div class="swiper-wrapper">
+            <!-- Slide 1: F5G POL -->
+            <div class="swiper-slide hero-section">
+                <img src="/img/hero_vivid_1.png" class="hero-video-bg ken-burns" alt="F5G POL">
+                <div class="hero-grid-overlay"></div>
+                <div class="hero-overlay"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-reveal-mask">
+                            <h5 class="text-info tracking-wider mb-3 text-uppercase">F5G · PASSIVE OPTICAL LAN</h5>
+                        </span>
+                        <span class="hero-reveal-mask">
+                            <h1 class="hero-reveal-text">第五代固网<br>全光接入领导者</h1>
+                        </span>
+                        <span class="hero-reveal-mask">
+                            <p class="hero-reveal-subtitle">基于POL无源光局域网架构，以FTTO光纤到办公室为核心，为园区、酒店、医院和企业提供高速、安全、可靠的全光网络连接。
+                            </p>
+                        </span>
+                        <span class="hero-reveal-mask">
+                            <div class="hero-reveal-btn">
+                                <a href="#solution" class="btn btn-primary-ufi px-5 py-3">探索F5G解决方案 <i
+                                        class="bi bi-arrow-right ms-2"></i></a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2: FTTO Campus (RED STYLE) -->
+            <div class="swiper-slide hero-section">
+                <img src="/img/hero_vivid_red.png" class="hero-video-bg ken-burns" alt="FTTO Campus">
+                <div class="hero-grid-overlay"></div>
+                <div class="hero-overlay"
+                    style="background: radial-gradient(circle at center, transparent 0%, rgba(20, 0, 0, 0.8) 100%);">
+                </div>
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-reveal-mask">
+                            <h5 class="text-danger tracking-wider mb-3 text-uppercase">FTTO · FIBER TO THE OFFICE</h5>
+                        </span>
+                        <span class="hero-reveal-mask">
+                            <h1 class="hero-reveal-text">光纤到桌面<br>智慧园区全改造</h1>
+                        </span>
+                        <span class="hero-reveal-mask">
+                            <p class="hero-reveal-subtitle">告别传统铜缆布线，POL方案节省90%弱电间面积、降低30%能耗，实现校园、医院、酒店等场景的全光智慧升级。</p>
+                        </span>
+                        <span class="hero-reveal-mask">
+                            <div class="hero-reveal-btn">
+                                <a href="#solution" class="btn btn-primary-ufi px-5 py-3"
+                                    style="border-color: #ff4d4d; color: #ff4d4d;">查看POL方案 <i
+                                        class="bi bi-arrow-right ms-2"></i></a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3: 10G PON Foundation -->
+            <div class="swiper-slide hero-section">
+                <img src="/img/hero_vivid_3.png" class="hero-video-bg ken-burns" alt="10G PON">
+                <div class="hero-grid-overlay"></div>
+                <div class="hero-overlay"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-reveal-mask">
+                            <h5 class="text-info tracking-wider mb-3 text-uppercase">SORELINK · 10G PON R&D</h5>
+                        </span>
+                        <span class="hero-reveal-mask">
+                            <h1 class="hero-reveal-text">全光万兆<br>数字底座研发</h1>
+                        </span>
+                        <span class="hero-reveal-mask">
+                            <p class="hero-reveal-subtitle">全栈自研OLT/ONU/DSLAM产品线，从GPON到XGS-PON
+                                10G演进，为运营商与企业构建面向未来的坚实网络基石。</p>
+                        </span>
+                        <span class="hero-reveal-mask">
+                            <div class="hero-reveal-btn">
+                                <a href="#product" class="btn btn-primary-ufi px-5 py-3">浏览产品组合 <i
+                                        class="bi bi-arrow-right ms-2"></i></a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pagination & Navigation -->
+        <div class="swiper-pagination-hero"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<section class="section-padding reveal-on-scroll" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <div class="hover-scale shadow-lg rounded-4 overflow-hidden">
+                    <img src="/img/aboutus.jpg" alt="About SORELINK" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-7 ps-md-5">
+                <h5 class="text-uppercase text-info tracking-wider mb-2">关于 SORELINK</h5>
+                <h2 class="display-5 fw-bold mb-4">全光网络智能核心研发的先行者</h2>
+                <div class="lead text-muted mb-4">
+                    SORELINK 成立于 2015 年，总部位于上海。我们致力于 GPON ONU、xDSL DSLAM、EOC 及交换机的全栈研发与生产，为全球通信网络提供卓越动力。
+                </div>
+                <p class="text-muted mb-4">
+                    我们的团队由拥有十年以上电信设备研发经验的资深工程师组成。除了自主研发能力外，我们还拥有覆盖全球的技术专家网络，并与学术界保持紧密合作，确保我们的解决方案始终处于行业前沿。
+                </p>
+                <a href="#contact" class="btn btn-primary-ufi btn-sm">联系我们的专家 <i
+                        class="bi bi-chevron-right ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding bg-light reveal-on-scroll" id="product">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h5 class="text-uppercase text-info tracking-wider mb-3">产品组合</h5>
+            <h2 class="display-5 fw-bold">F5G 全光网络产品</h2>
+            <p class="text-muted mt-3">涵盖 OLT、ONU、DSLAM 三大产品线，端到端赋能 POL 无源光局域网与运营商宽带接入</p>
+        </div>
+
+        <!-- OLT Section -->
+        <div class="mt-5">
+            <h3 class="h2 fw-bold mb-5 text-start border-start border-4 border-info ps-4">OLT (光线路终端)</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/olt/olt_two_pon.jpg" class="card-img-top p-4" alt="S1600GT">
+                        <div class="card-body p-4 text-start">
+                            <span class="badge bg-info mb-2">紧凑型</span>
+                            <h5 class="fw-bold mb-2">2口 GPON/XG/XGS-PON OLT</h5>
+                            <p class="text-muted small mb-1"><strong>型号: S1600GT</strong></p>
+                            <p class="text-muted small">FTTM | 低密度 | 简约设计 | 分光比 1:128 | 208Gbps 背板带宽</p>
+                            <a href="product/s1600gt.html" class="btn-ufi text-info fw-bold text-decoration-none">了解更多
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/olt/olt_16_port.jpg" class="card-img-top p-4" alt="S1600G16">
+                        <div class="card-body p-4 text-start">
+                            <span class="badge bg-info mb-2">高密度</span>
+                            <h5 class="fw-bold mb-2">16口 GPON OLT</h5>
+                            <p class="text-muted small mb-1"><strong>型号: S1600G16</strong></p>
+                            <p class="text-muted small">三层交换 | 支持热插拔 | FTTM 紧凑型 | 运营商级可靠性</p>
+                            <a href="product/s1600g16.html" class="btn-ufi text-info fw-bold text-decoration-none">了解更多
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/olt/olt_8_port.jpg" class="card-img-top p-4" alt="S3600G1-C">
+                        <div class="card-body p-4 text-start">
+                            <span class="badge bg-danger mb-2">旗舰 10G</span>
+                            <h5 class="fw-bold mb-2">8口 XG(S) Combo PON OLT</h5>
+                            <p class="text-muted small mb-1"><strong>型号: S3600G1-C</strong></p>
+                            <p class="text-muted small">100Gbps | QSFP28 上行 | XG(S)-PON&GPON 双模 | 1960Gbps 背板带宽</p>
+                            <a href="product/s3600g1c.html" class="btn-ufi text-info fw-bold text-decoration-none">了解更多
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/olt/olt_2_slot.jpg" class="card-img-top p-4" alt="S3600-2S">
+                        <div class="card-body p-4 text-start">
+                            <span class="badge bg-warning text-dark mb-2">模块化</span>
+                            <h5 class="fw-bold mb-2">双槽 GPON/XGS-PON 组合机箱 OLT</h5>
+                            <p class="text-muted small mb-1"><strong>型号: S3600-2S</strong></p>
+                            <p class="text-muted small">100GE 上行 | 32 PON口 | 完全冗余架构 | 灵活扩展</p>
+                            <a href="product/s3600-2s.html" class="btn-ufi text-info fw-bold text-decoration-none">了解更多
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/olt/olt_7_slot.jpg" class="card-img-top p-4" alt="S3600-7S">
+                        <div class="card-body p-4 text-start">
+                            <span class="badge bg-warning text-dark mb-2">核心级</span>
+                            <h5 class="fw-bold mb-2">七槽 GPON/XGS-PON 组合机箱 OLT</h5>
+                            <p class="text-muted small mb-1"><strong>型号: S3600-7S</strong></p>
+                            <p class="text-muted small">100GE 上行 | 112 PON口 | 核心级交换能力 | 大型园区首选</p>
+                            <a href="product/s3600-7s.html" class="btn-ufi text-info fw-bold text-decoration-none">了解更多
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ONU Section - Data ONU -->
+        <div class="mt-5 pt-5">
+            <h3 class="h2 fw-bold mb-5 text-start border-start border-4 border-info ps-4">ONU · 数据终端</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/onu/onu_data_1.jpg" class="card-img-top p-4" alt="S2901Q-A">
+                        <div class="card-body p-4 text-start">
+                            <span class="badge bg-info mb-2">10G PON</span>
+                            <h5 class="fw-bold mb-2">10G PON+2.5GbE ONU</h5>
+                            <p class="text-muted small mb-1"><strong>型号: S2901Q-A</strong></p>
+                            <p class="text-muted small">可选 XG-PON/XGS-PON | IPv4/IPv6 双栈</p>
+                            <a href="product/s2901qa.html" class="btn-ufi text-info fw-bold text-decoration-none">了解更多
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/onu/onu_data_3.jpg" class="card-img-top p-4" alt="S2902A-S">
+                        <div class="card-body p-4 text-start">
+                            <span class="badge bg-info mb-2">10G PON</span>
+                            <h5 class="fw-bold mb-2">10G PON+1GE+1SFP+HGU ONU</h5>
+                            <p class="text-muted small mb-1"><strong>型号: S2902A-S</strong></p>
+                            <p class="text-muted small">可选 XG/XGS | 即插即用 | 高效散热</p>
+                            <a href="product/s2902as.html" class="btn-ufi text-info fw-bold text-decoration-none">了解更多
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/onu/onu_data_2.jpg" class="card-img-top p-4" alt="S2801Q">
+                        <div class="card-body p-4 text-start">
+                            <h5 class="fw-bold mb-2">1XPON+2.5GbE ONU</h5>
+                            <p class="text-muted small mb-1"><strong>型号: S2801Q</strong></p>
+                            <p class="text-muted small">XPON 双模 | 安全可靠 | 紧凑设计</p>
+                            <a href="product/s2801q.html" class="btn-ufi text-info fw-bold text-decoration-none">了解更多 <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/onu/onu_data_ftto.png" class="card-img-top p-4" alt="S2802RH">
+                        <div class="card-body p-4 text-start">
+                            <span class="badge bg-success mb-2">FTTO</span>
+                            <h5 class="fw-bold mb-2">1*2.5GbE+1GE ONT</h5>
+                            <p class="text-muted small mb-1"><strong>型号: S2802RH</strong></p>
+                            <p class="text-muted small">XPON 双模 | FTTO 光纤到办公室 | POL 园区首选</p>
+                            <a href="product/s2802rh.html" class="btn-ufi text-info fw-bold text-decoration-none">了解更多
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/onu/onu_data_sfp.png" class="card-img-top p-4" alt="S2801F">
+                        <div class="card-body p-4 text-start">
+                            <span class="badge bg-secondary mb-2">超紧凑</span>
+                            <h5 class="fw-bold mb-2">1XPON+1GE(SFP) SFP ONT</h5>
+                            <p class="text-muted small mb-1"><strong>型号: S2801F</strong></p>
+                            <p class="text-muted small">超小型 | XPON 双模 | 即插即用 | 桥接模式</p>
+                            <a href="product/s2801f.html" class="btn-ufi text-info fw-bold text-decoration-none">了解更多 <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/onu/onu_data_4ge.png" class="card-img-top p-4" alt="S283D-4G">
+                        <div class="card-body p-4 text-start">
+                            <h5 class="fw-bold mb-2">4GE XPON SFU ONU</h5>
+                            <p class="text-muted small mb-1"><strong>型号: S283D-4G</strong></p>
+                            <p class="text-muted small">钢壳外壳 | 卓越散热 | 宽温设计 | 快速部署</p>
+                            <a href="product/s283d4g.html" class="btn-ufi text-info fw-bold text-decoration-none">了解更多
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ONU Section - Built-in/Wi-Fi ONT -->
+        <div class="mt-5 pt-5">
+            <h3 class="h2 fw-bold mb-5 text-start border-start border-4 border-info ps-4">ONU · 智能网关 (Wi-Fi ONT)</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/onu/onu_builtin_1.jpg" class="card-img-top p-4" alt="Wi-Fi 6 HGU ONT">
+                        <div class="card-body p-4 text-start">
+                            <span class="badge bg-success mb-2">Wi-Fi 6</span>
+                            <h5 class="fw-bold mb-2">1XPON+4LAN+1USB3.0+Wi-Fi 6 HGU ONT</h5>
+                            <p class="text-muted small">AX3000 双频 | 三网合一 | 可选 CATV</p>
+                            <a href="product/s-wifi6-hgu.html"
+                                class="btn-ufi text-info fw-bold text-decoration-none">了解更多 <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/onu/onu_builtin_2.jpg" class="card-img-top p-4" alt="Wi-Fi 5 ONT">
+                        <div class="card-body p-4 text-start">
+                            <span class="badge bg-secondary mb-2">Wi-Fi 5</span>
+                            <h5 class="fw-bold mb-2">1XPON+2GE+Wi-Fi 5 ONT</h5>
+                            <p class="text-muted small">XPON 双模 | EasyMesh | IPv4/IPv6 双栈</p>
+                            <a href="product/s-wifi5-ont.html"
+                                class="btn-ufi text-info fw-bold text-decoration-none">了解更多 <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/onu/onu_builtin_3.jpg" class="card-img-top p-4" alt="10G Wi-Fi 6 HGU">
+                        <div class="card-body p-4 text-start">
+                            <span class="badge bg-danger mb-2">10G Wi-Fi 6</span>
+                            <h5 class="fw-bold mb-2">1*2.5GE+3GE+USB3.0+Wi-Fi 6 HGU ONT</h5>
+                            <p class="text-muted small">10G PON | AX3000 多频 | 极速接入</p>
+                            <a href="product/s-10g-wifi6.html"
+                                class="btn-ufi text-info fw-bold text-decoration-none">了解更多 <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DSLAM Section (Keep Original) -->
+        <div class="mt-5 pt-5">
+            <h3 class="h2 fw-bold mb-5 text-start border-start border-4 border-info ps-4">DSLAM (数字用户线路接入复用器)</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/dslam/dslam_1.jpg" class="card-img-top p-4" alt="DSLAM 1">
+                        <div class="card-body p-4 text-start">
+                            <h5 class="fw-bold mb-3">多口 VDSL2/ADSL2+ DSLAM</h5>
+                            <p class="text-muted small">高带宽接入 | 下降兼容 | 运营商级管理</p>
+                            <a href="product/dslam-multi.html"
+                                class="btn-ufi text-info fw-bold text-decoration-none">了解更多 <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/dslam/dslam_2.jpg" class="card-img-top p-4" alt="DSLAM 2">
+                        <div class="card-body p-4 text-start">
+                            <h5 class="fw-bold mb-3">室外型 Mini DSLAM MDU</h5>
+                            <p class="text-muted small">IP67 防护 | 宽温工作 | 光电一体化</p>
+                            <a href="product/dslam-outdoor.html"
+                                class="btn-ufi text-info fw-bold text-decoration-none">了解更多 <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col stagger-item">
+                    <div class="card h-100 hover-lift border-0 shadow-sm rounded-4">
+                        <img src="/img/products/dslam/dslam_3.jpg" class="card-img-top p-4" alt="DSLAM 3">
+                        <div class="card-body p-4 text-start">
+                            <h5 class="fw-bold mb-3">8口 户外型 DSLAM 模块</h5>
+                            <p class="text-muted small">挂墙/抱杆安装 | 支持远程供电 | 高集成度</p>
+                            <a href="product/dslam-module.html"
+                                class="btn-ufi text-info fw-bold text-decoration-none">了解更多 <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding reveal-on-scroll" id="solution">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h5 class="text-uppercase text-info tracking-wider mb-3">F5G 解决方案</h5>
+            <h2 class="display-5 fw-bold">POL 无源光局域网</h2>
+            <p class="text-muted mt-3 mx-auto" style="max-width: 800px;">基于 GPON/XGS-PON 技术，以 OLT 为核心、光分路器为中继、ONU
+                为终端，构建无需有源设备的全光传输网络。相比传统铜缆方案，节省90%弱电间面积、降低30%能耗、支持20年免维护。</p>
+        </div>
+
+        <div class="row g-4 mt-4">
+            <div class="col-md-6 col-lg-3 stagger-item">
+                <div class="card h-100 border-0 shadow-sm hover-lift rounded-4 overflow-hidden">
+                    <div class="card-body p-4 text-center">
+                        <div class="bg-info bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 80px; height: 80px;">
+                            <i class="bi bi-building text-info" style="font-size: 2rem;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">智慧校园</h5>
+                        <p class="text-muted small">FTTO 光纤到教室，支撑教育信息化 2.0。一根光纤覆盖教学楼、宿舍、实验室，实现万兆校园网。</p>
+                        <a href="#contact" class="text-info text-decoration-none fw-bold small">了解方案 <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 stagger-item">
+                <div class="card h-100 border-0 shadow-sm hover-lift rounded-4 overflow-hidden">
+                    <div class="card-body p-4 text-center">
+                        <div class="bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 80px; height: 80px;">
+                            <i class="bi bi-hospital text-danger" style="font-size: 2rem;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">智慧医疗</h5>
+                        <p class="text-muted small">POL 网络替代传统多层交换架构，满足 PACS 影像传输、HIS 系统等高可靠性医疗网络需求。</p>
+                        <a href="#contact" class="text-info text-decoration-none fw-bold small">了解方案 <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 stagger-item">
+                <div class="card h-100 border-0 shadow-sm hover-lift rounded-4 overflow-hidden">
+                    <div class="card-body p-4 text-center">
+                        <div class="bg-warning bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 80px; height: 80px;">
+                            <i class="bi bi-houses text-warning" style="font-size: 2rem;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">智慧酒店</h5>
+                        <p class="text-muted small">全光网络覆盖客房、会议厅、公共区域。支持 IPTV、智能客控、高速 Wi-Fi，打造五星级数字体验。</p>
+                        <a href="#contact" class="text-info text-decoration-none fw-bold small">了解方案 <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 stagger-item">
+                <div class="card h-100 border-0 shadow-sm hover-lift rounded-4 overflow-hidden">
+                    <div class="card-body p-4 text-center">
+                        <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 80px; height: 80px;">
+                            <i class="bi bi-gear-wide-connected text-success" style="font-size: 2rem;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">智慧企业/工厂</h5>
+                        <p class="text-muted small">POL 全光改造办公园区与生产厂区，无源网络免维护，支持 IoT 接入与工业控制协同。</p>
+                        <a href="#contact" class="text-info text-decoration-none fw-bold small">了解方案 <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- POL Advantage Stats -->
+        <div class="row g-4 mt-5 pt-4">
+            <div class="col-md-3 stagger-item">
+                <div class="p-4 bg-white shadow-sm hover-lift rounded-4 text-center">
+                    <div class="display-4 text-info fw-bold mb-3">90%</div>
+                    <h5 class="fw-bold">弱电间节省</h5>
+                    <p class="text-muted small">无源架构免除楼层交换机，大幅减少机房面积。</p>
+                </div>
+            </div>
+            <div class="col-md-3 stagger-item">
+                <div class="p-4 bg-white shadow-sm hover-lift rounded-4 text-center">
+                    <div class="display-4 text-info fw-bold mb-3">30%</div>
+                    <h5 class="fw-bold">能耗降低</h5>
+                    <p class="text-muted small">光分路器零功耗，网络整体能效大幅提升。</p>
+                </div>
+            </div>
+            <div class="col-md-3 stagger-item">
+                <div class="p-4 bg-white shadow-sm hover-lift rounded-4 text-center">
+                    <div class="display-4 text-info fw-bold mb-3">20 年</div>
+                    <h5 class="fw-bold">免维护寿命</h5>
+                    <p class="text-muted small">无源光纤无需电源，超越传统铜缆使用周期。</p>
+                </div>
+            </div>
+            <div class="col-md-3 stagger-item">
+                <div class="p-4 bg-white shadow-sm hover-lift rounded-4 text-center">
+                    <div class="display-4 text-info fw-bold mb-3">10Gbps</div>
+                    <h5 class="fw-bold">对称带宽</h5>
+                    <p class="text-muted small">XGS-PON 提供真正的万兆对称极速体验。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding bg-dark text-white reveal-on-scroll" id="cta-connect">
+    <div class="container text-center">
+        <h2 class="display-4 fw-bold mb-4">We are Open to Connect</h2>
+        <p class="lead text-gray mb-5">诚邀您与我们的技术专家探讨 F5G 全光网络与 POL 无源光局域网解决方案。</p>
+        <a href="#contact" class="btn btn-primary-ufi">联系我们 <i class="bi bi-arrow-right ms-2"></i></a>
+    </div>
+</section>
+
+<section id="contact" class="section-padding reveal-on-scroll">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="text-uppercase text-info tracking-wider mb-3">联系我们</h5>
+                <h2 class="display-5 fw-bold mb-4">随时为您解答</h2>
+                <p class="text-muted mb-5">无论是产品咨询还是技术支持，我们的团队都随时待命。</p>
+
+                <div class="d-flex mb-4">
+                    <div class="bg-info bg-opacity-10 p-3 rounded-circle me-3">
+                        <i class="bi bi-geo-alt text-info fs-4"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">公司地址</h6>
+                        <p class="text-muted">深圳市南山区高新南七道数字技术园B2栋3楼C区</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <div class="bg-info bg-opacity-10 p-3 rounded-circle me-3">
+                        <i class="bi bi-envelope text-info fs-4"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">电子邮件</h6>
+                        <p class="text-muted">support@sorelink.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-light p-5 rounded-4 shadow-sm">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">姓名</label>
+                            <input type="text" class="form-control border-0 p-3" placeholder="您的姓名">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">邮箱</label>
+                            <input type="email" class="form-control border-0 p-3" placeholder="您的邮箱">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fw-bold">留言内容</label>
+                            <textarea class="form-control border-0 p-3" rows="4" placeholder="您想对我们说的话"></textarea>
+                        </div>
+                        <button class="btn btn-primary-ufi w-100">提交留言</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-5 mb-md-0">
+                <div class="logo footer-logo mb-4"></div>
+                <p class="text-gray mb-4">
+                    SORELINK Ltd 为全球通信行业提供量身定制的网络产品。我们的研发团队拥有十年以上的电信设备及工具开发经验。
+                </p>
+                <div class="social-links">
+                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i
+                            class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4 mb-md-0">
+                <h5>解决方案</h5>
+                <ul>
+                    <li><a href="#">电信网络</a></li>
+                    <li><a href="#">云与数据中心</a></li>
+                    <li><a href="#">宽带接入</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 mb-4 mb-md-0">
+                <h5>产品 center</h5>
+                <ul>
+                    <li><a href="#">OLT 光线路终端</a></li>
+                    <li><a href="#">ONU 光网络单元</a></li>
+                    <li><a href="#">DSLAM 复用器</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>联系我们</h5>
+                <ul class="text-gray">
+                    <li><i class="bi bi-geo-alt me-2"></i> 深圳市南山区高新南七道数字技术园B2栋3楼C区</li>
+                    <li><i class="bi bi-envelope me-2"></i> support@sorelink.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    &copy; 2026 SORELINK Ltd. All rights reserved.
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="sharethis-inline-share-buttons"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/scripts.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/js/animations.js"></script>
 </body>
+
 </html>

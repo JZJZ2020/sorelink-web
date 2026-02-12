@@ -1,65 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+  --primary-navy: #0B1F2D;
+  --accent-cyan: #00D4FF;
+  --bg-dark: #071620;
+  --text-white: #FFFFFF;
+  --text-gray: #A0AEC0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-navy);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+}
 
 /*--------------------- 通用  -----------------------*/
-.ty-transform-top-110{
-  transform: translateY(-100px);
+.section-padding {
+  padding: 100px 0;
 }
-/*--------------------- 导航栏-1  -----------------------*/
+
+/*--------------------- 导航栏-1 (Top Bar) -----------------------*/
 .ty-navbar-1 {
-    background-color: #000; /* 背景色为黑色 */
-    color: white;
-    font-size: 14px;
-  }
-  .ty-navbar-1 a {
-    color: rgba(203, 203, 203, 1);
-    text-decoration: none;
-  }
-  .ty-navbar-1 a:hover {
-    color: white; /* 悬停效果 */
-  }
-  .ty-navbar-1-divider {
-    margin: 0 10px;
-    color: #999;
-  }
+  background-color: var(--primary-navy);
+  color: white;
+  font-size: 13px;
+  padding: 8px 0;
+  border-bottom: 2px solid var(--accent-cyan);
+}
+
+.ty-navbar-1 a {
+  color: rgba(203, 203, 203, 1);
+  text-decoration: none;
+}
+
+.ty-navbar-1 a:hover {
+  color: #00FFE2;
+  /* Cyan hover effect */
+}
+
+.ty-navbar-1-divider {
+  margin: 0 10px;
+  color: #999;
+}
 
 
 
 
 
-/*--------------------- 导航栏-2  -----------------------*/
+/*--------------------- 导航栏-2 (Main Nav) -----------------------*/
+.navbar {
+  transition: all 0.4s ease;
+  padding: 20px 0;
+}
+
+.navbar.scrolled {
+  background-color: var(--primary-navy) !important;
+  padding: 12px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
 .ty-navbar-2-brand .logo {
-    width: 120px;
-    height: 34px;
-    opacity: 1;
-    background: url(/img/logo.png);
-    background-size: contain; 
+  width: 140px;
+  height: 40px;
+  background: url(/img/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: brightness(0) invert(1);
 }
-.ty-navbar-2-nav-link {
-  padding: 0 20px;
-}
-.ty-navbar-2-nav-link .nav-link{
-  color: #000;
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  margin: 0 15px;
+  font-size: 16px;
   opacity: 0.8;
-}
-.ty-navbar-2-nav-link .nav-link:hover {
-  color: #000; /* 悬停效果 */
+  transition: all 0.3s ease;
 }
 
-/*--------------------- 广告栏  -----------------------*/
-.ty-advertisement-section {
-  background-color: #f8f9fa;
-  background: url(/img/ad_backgroud.png);
-  background-size: cover; /* 让背景图充满整个容器 */
-  background-repeat: no-repeat; /* 防止背景图片重复 */
-  background-position: center center; /* 将背景图居中 */
-
+.navbar-nav .nav-link:hover {
+  color: var(--accent-cyan) !important;
+  opacity: 1;
 }
-.ty-advertisement-section-mobile {
-  background-color: #f8f9fa;
-  background: url(/img/address_backgroud_mobile.png);
-  background-size: cover; /* 让背景图充满整个容器 */
-  background-repeat: no-repeat; /* 防止背景图片重复 */
-  background-position: center center; /* 将背景图居中 */
 
+.navbar.scrolled .nav-link {
+  color: white !important;
+}
+
+/* --- Custom Cursor Overrides --- */
+/* Strictly hide default cursor only inside hero area */
+.hero-swiper-container,
+.hero-swiper-container *,
+.hero-swiper-container .btn,
+.hero-swiper-container a {
+  cursor: none !important;
+}
+
+/*--------------------- Hero Section -----------------------*/
+.hero-section {
+  height: 100vh;
+  min-height: 700px;
+  background-color: var(--bg-dark);
+  position: relative;
+  overflow: hidden;
+  color: white;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.hero-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  z-index: 1;
+  transition: transform 10s ease-out;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(7, 22, 32, 0.4) 0%, rgba(7, 22, 32, 0.85) 100%);
+  z-index: 2;
+}
+
+/*--------------------- Hero Swiper Section -----------------------*/
+.hero-swiper-container {
+  height: 100vh;
+  min-height: 700px;
+  width: 100%;
+}
+
+.heroSwiper {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 5.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.1;
+  letter-spacing: -3px;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  color: var(--text-gray);
+  margin-bottom: 45px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero-particles-canvas {
+  opacity: 0.6;
+}
+
+.btn-primary-ufi {
+  background: transparent;
+  border: 2px solid var(--accent-cyan);
+  color: var(--accent-cyan);
+  padding: 14px 40px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary-ufi:hover {
+  background: var(--accent-cyan);
+  color: var(--primary-navy);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
 }
 
 
@@ -67,52 +205,129 @@
 .ty-introduce-1-section {
   padding: 60px 0;
 }
+
 .ty-introduce-1-company-title {
   font-size: 2rem;
   font-weight: bold;
 }
+
 .ty-introduce-1-company-description {
   font-size: 1rem;
   color: #555;
   margin-top: 20px;
 }
+
 .ty-introduce-1-rounded-image {
-  border-radius: 15px;
+  border-radius: 24px;
   margin: 40px 0px;
-
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/*--------------------- 产品-1  -----------------------*/
+.ty-introduce-1-rounded-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/*--------------------- 产品-1 -----------------------*/
 .ty-product-1-section {
-  padding: 50px 0;
-  background: url(/img/product_backgroud.png);
-  background-size: cover; /* 让背景图充满整个容器 */
-  background-repeat: no-repeat; /* 防止背景图片重复 */
-  background-position: center center; /* 将背景图居中 */
+  padding: 120px 0;
+  background: #F8FAFC;
 }
+
+.ty-product-1-section h2 {
+  color: #1E293B;
+  font-weight: 700;
+  margin-bottom: 60px;
+  font-size: 2.5rem;
+}
+
+.ty-product-1-section h3 {
+  color: #1E293B;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.ty-product-1-section .card {
+  border: none;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  background: #fff;
+}
+
+.ty-product-1-section .card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 255, 226, 0.15), 0 0 0 1px rgba(0, 255, 226, 0.1);
+}
+
 .ty-product-1-img {
-  padding: 20px 20px;
+  padding: 30px;
+  background: #fff;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
+
+.card:hover .ty-product-1-img {
+  transform: scale(1.05);
+}
+
 .ty-product-1-title {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  color: #1E293B;
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.4;
 }
+
 .ty-product-1-content {
   padding-bottom: 20px;
-}
-.ty-product-1-btn {
-  border-radius: 30px;
-  border: 2px solid #007bff;
-  color: #007bff;
-  padding: 8px 20px;
-  margin-bottom: 20px;
-}
-.ty-product-1-btn:hover {
-  background-color: #007bff;
-  color: #fff;
+  color: #64748B;
+  font-size: 0.95rem;
 }
 
-/*--------------------- 介绍-2  -----------------------*/
+.ty-product-1-btn {
+  border-radius: 50px;
+  border: 2px solid #1E293B;
+  color: #1E293B;
+  background: transparent;
+  padding: 12px 28px 12px 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ty-product-1-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00FFE2;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.ty-product-1-btn:hover::before {
+  width: 100%;
+}
+
+.ty-product-1-btn:hover {
+  color: #1E293B;
+  border-color: #00FFE2;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 255, 226, 0.3);
+}
+
+/*--------------------- 介绍-2 -----------------------*/
 
 .ty-introduce-2-line {
   width: 156px;
@@ -134,17 +349,20 @@
   color: #666;
   margin-bottom: 15px;
 }
+
 .ty-introduce-2-icon-circle span {
   display: block;
   font-size: 18px;
   font-weight: bold;
   margin-top: 5px;
 }
+
 .ty-introduce-2-title {
   padding-top: 20px;
   padding-bottom: 20px;
   height: 80px;
 }
+
 .ty-introduce-2-content {
   padding-bottom: 20px;
   opacity: 0.6;
@@ -153,7 +371,7 @@
 /*--------------------- 地图  -----------------------*/
 .ty-map-img {
   height: 501px;
-  background-size: contain; 
+  background-size: contain;
 }
 
 /*--------------------- 地址  -----------------------*/
@@ -162,49 +380,85 @@
   background: url('/img/address_backgroud.png') no-repeat center center;
   background-size: cover;
 }
+
 .ty-address-contact {
   padding: 30px;
 }
+
 .ty-address-contact-container {
   background-color: rgba(0, 0, 0, 0);
   padding: 30px;
   border-radius: 15px;
   color: #fff;
 }
+
 .ty-address-line {
   width: 156px;
   height: 3px;
   background: #4A62F8FF;
   margin-bottom: 40px;
 }
+
 .ty-address-contact-info h2 {
   color: #fff;
 }
+
 .ty-address-map {
   padding: 60px;
 }
+
 .ty-address-map-container iframe {
   border-radius: 10px;
 }
 
 /*--------------------- 尾部  -----------------------*/
+/*--------------------- 尾部 (Footer) -----------------------*/
 .footer {
-  background-color: #f8f9fa;
-  padding: 15px 0;
-  text-align: center;
-}
-.footer-links {
-  margin-bottom: 15px;
-}
-.footer-links-item {
-  padding: 12px 0;
-}
-.footer-links .footer-links-item  a {
-  margin: 0 15px;
-  color: rgba(105, 105, 105, 1);
-  text-decoration: none;
+  background-color: var(--primary-navy);
+  padding: 80px 0 40px;
+  color: white;
+  text-align: left;
 }
 
-.footer-links a:hover {
-  color: #343a40;
+.footer-logo {
+  width: 150px;
+  filter: brightness(0) invert(1);
+  margin-bottom: 30px;
+}
+
+.footer h5 {
+  color: var(--accent-cyan);
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 12px;
+}
+
+.footer ul li a {
+  color: var(--text-gray);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 15px;
+}
+
+.footer ul li a:hover {
+  color: var(--accent-cyan);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 60px;
+  padding-top: 30px;
+  font-size: 13px;
+  color: var(--text-gray);
 }
